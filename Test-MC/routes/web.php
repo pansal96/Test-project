@@ -21,4 +21,4 @@ route::get('/adm',function(){
     return view('AdminPage');
 });
 
-Route::post('/savehotels',[Homecontroller::class,'savedata']);
+Route::post("/savehotels",[hotelcontroller::class,'save']);

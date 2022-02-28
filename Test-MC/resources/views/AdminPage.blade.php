@@ -65,20 +65,21 @@
 
                 </script>
 
-        <div class="col-sm-9 p-3 bg-info text-white">
+        <div class="col-sm-9 p-3 bg-white text-black">
 
             <div class="form-popup" id="myForm">
-                <form action="/savehotels" method="post" >
-                    <div class="container">
+                <form method="post" action="/savehotels" >
 
-                        <h1>Add Locations</h1>
+                    {{csrf_field()}}
+                    <div class="container">
+                         <h1>Add Locations</h1>
                         <hr>
                     
                             <label for="name"><b>Location Name</b></label>
-                            <input type="text" class="form-control" placeholder="Enter Hotel name" name="Hname" required></br>
+                            <input type="text" class="form-control" placeholder="Enter Hotel name" name="Lname" required></br>
                         
                             <label for="Desc"><b>Description</b></label>
-                            <textarea class="form-control" placeholder="Enter Description" name="desc" style="height:20px;"></textarea></br>
+                            <textarea class="form-control" placeholder="Enter Description" name="Ldesc" style="height:20px;"></textarea></br>
 
                             <label for="img"><b>Near by Hotels</b></label>
                             <input type="text" class="form-control" placeholder="Enter hotels" name="NBH"></br>
@@ -88,7 +89,7 @@
                         <hr>
                     
                         <button type="button" class="btn btn-primary btn-lg" onclick="closeForm()">Close</button>
-                        <button type="submit" class="btn btn-success btn-lg" >SAVE</button>
+                        <button type="submit" class="btn btn-success btn-lg" value='SAVE' >SAVE</button>
                         <button type="reset" class="btn btn-warning btn-lg" >Reset</button>
                     
                     </div>
