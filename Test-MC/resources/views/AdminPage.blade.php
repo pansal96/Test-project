@@ -65,7 +65,7 @@
 
                 </script>
 
-        <div class="col-sm-9 p-3 bg-secondary text-white">
+        <div class="col-sm-9 p-3 bg-info text-white">
 
             <div class="form-popup" id="myForm">
                 <form action="/savehotels" method="post" >
