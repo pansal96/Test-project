@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+route::get('/adm',function(){
+    return view('AdminPage');
+});
+
+Route::post('/savehotels',[Homecontroller::class,'savedata']);
