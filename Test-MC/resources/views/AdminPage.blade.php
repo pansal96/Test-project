@@ -68,7 +68,7 @@
         <div class="col-sm-9 p-3 bg-white text-black">
 
             <div class="form-popup" id="myForm">
-                <form method="post" action="/savehotels" >
+                <form method="post" action="/savehotels"  >
 
                     {{csrf_field()}}
                     <div class="container">

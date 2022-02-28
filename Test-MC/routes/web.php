@@ -18,7 +18,8 @@ Route::get('/', function () {
 });
 
 route::get('/adm',function(){
-    return view('AdminPage');
+    return view('admin');
 });
 
-Route::post("/savehotels",[hotelcontroller::class,'save']);
+route::post('/savehotels','hotelcontroller@save');
+
